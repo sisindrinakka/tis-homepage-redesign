@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #183d30;
+  background: #f8f7f2;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  --green: #183d30;
+  --green-dark: #102a21;
+  --gold: #c5a46d;
+  --cream: #f8f7f2;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--green-dark);
+}
+/* =========================================
+   ADMISSIONS SECTION
+========================================= */
+
+.admissions-section {
+  padding: 120px 7%;
+
+  background: #b48a45;
+
+  color: #173c2c;
+}
+
+.admissions-container {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.admissions-content {
+  max-width: 750px;
+}
+
+.admissions-content .section-label {
+  color: #173c2c;
+}
+
+.admissions-content h2 {
+  margin: 0 0 25px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(50px, 7vw, 85px);
+
+  line-height: 1;
+
+  font-weight: 500;
+}
+
+.admissions-content h2 span {
+  font-style: italic;
+}
+
+.admissions-content > p {
+  max-width: 600px;
+
+  margin-bottom: 35px;
+
+  color: rgba(23, 60, 44, 0.75);
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.admissions-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.admission-primary {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 22px;
+
+  background: #173c2c;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: gap 0.3s ease;
+}
+
+.admission-primary:hover {
+  gap: 15px;
+}
+
+.admission-secondary {
+  color: #173c2c;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  border-bottom: 1px solid #173c2c;
+
+  padding-bottom: 4px;
+}
+
+
+/* Number */
+
+.admissions-number {
+  text-align: right;
+}
+
+.admissions-number span {
+  font-family: "Playfair Display", serif;
+
+  font-size: 100px;
+
+  line-height: 1;
+
+  opacity: 0.25;
+}
+
+.admissions-number p {
+  margin-top: 10px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  font-weight: 700;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .admissions-section {
+    padding: 80px 6%;
+  }
+
+  .admissions-container {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .admissions-content h2 {
+    font-size: 52px;
+  }
+
+  .admissions-content > p {
+    font-size: 15px;
+  }
+
+  .admissions-number {
+    text-align: left;
+  }
+
+  .admissions-number span {
+    font-size: 70px;
+  }
+}
