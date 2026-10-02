@@ -1,16 +1,84 @@
-# React + Vite
+# Tulas International School — Homepage Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive single-page homepage redesign for Tulas International School, created as a frontend development assignment.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://tis-homepage-redesign-cyan.vercel.app/
 
-## React Compiler
+## GitHub Repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+https://github.com/sisindrinakka/tis-homepage-redesign
 
-## Expanding the Oxlint configuration
+## Project Overview
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+This project focuses on creating a modern, clean, and responsive school website experience while maintaining a professional educational visual style.
+
+The homepage includes smooth animations, responsive layouts, interactive navigation, dark/light mode, and scroll-based visual feedback.
+
+## Features
+
+- Responsive design for mobile, tablet, and desktop
+- Modern navigation bar
+- Mobile hamburger menu
+- Hero section with call-to-action buttons
+- About section
+- Academics section
+- Campus section
+- Admissions section
+- Footer with navigation links
+- Dark / Light theme toggle
+- Scroll progress indicator
+- Scroll reveal animations using Framer Motion
+- Interactive hover effects
+- Responsive images and layouts
+
+## Responsive Testing
+
+The website was tested at:
+
+- 375px — Mobile
+- 768px — Tablet
+- 1280px — Desktop
+
+## Technologies Used
+
+- React
+- Vite
+- JavaScript
+- HTML5
+- CSS3
+- Framer Motion
+- Lucide React
+
+## Project Structure
+
+```text
+tis-homepage-redesign/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   └── ScrollProgress.jsx
+│   │
+│   ├── sections/
+│   │   ├── AboutSection.jsx
+│   │   ├── AcademicsSection.jsx
+│   │   ├── CampusSection.jsx
+│   │   ├── AdmissionsSection.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
